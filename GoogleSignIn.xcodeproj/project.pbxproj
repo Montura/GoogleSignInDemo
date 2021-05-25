@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A6D29BC265CF3E40018C25C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6D29BA265CF3E40018C25C /* Main.storyboard */; };
+		5A6D29C1265CF3E50018C25C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6D29BF265CF3E50018C25C /* LaunchScreen.storyboard */; };
+		5A6D29FB265CFF9E0018C25C /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6D29F2265CF9ED0018C25C /* AppAuth.xcframework */; };
+		5A6D29FE265CFF9F0018C25C /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6D29E2265CF9820018C25C /* FIRAnalyticsConnector.framework */; };
+		5A6D2A00265CFFA10018C25C /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6D29DE265CF9820018C25C /* FirebaseCore.xcframework */; };
+		5A6D2A02265CFFA20018C25C /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6D29DA265CF9810018C25C /* FirebaseAnalytics.framework */; };
+		5A6D2A08265CFFA60018C25C /* FirebaseInstallations.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6D29DB265CF9810018C25C /* FirebaseInstallations.xcframework */; };
+		5A6D2A0A265CFFA80018C25C /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6D29DD265CF9820018C25C /* GoogleAppMeasurement.framework */; };
+		5A6D2A0C265CFFA90018C25C /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6D29DF265CF9820018C25C /* GoogleDataTransport.xcframework */; };
+		5A6D2A0E265CFFAB0018C25C /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6D29D6265CF94F0018C25C /* GoogleSignIn.framework */; };
+		5A6D2A10265CFFAC0018C25C /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6D29DC265CF9810018C25C /* GoogleUtilities.xcframework */; };
+		5A6D2A12265CFFAD0018C25C /* GTMAppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6D29F1265CF9ED0018C25C /* GTMAppAuth.xcframework */; };
+		5A6D2A18265CFFB30018C25C /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6D29E1265CF9820018C25C /* PromisesObjC.xcframework */; };
+		5A72A1BC265D15CE0038FCBA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A72A1B6265D15CD0038FCBA /* SceneDelegate.m */; };
+		5A72A1BE265D15CE0038FCBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A72A1B8265D15CD0038FCBA /* AppDelegate.m */; };
+		5A72A1BF265D15CE0038FCBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A72A1B9265D15CD0038FCBA /* ViewController.m */; };
+		5A72A1C0265D15CE0038FCBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A72A1BA265D15CE0038FCBA /* main.m */; };
+		5A72A1E9265D21960038FCBA /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A72A1E8265D21960038FCBA /* nanopb.xcframework */; };
+		5A72A1ED265D21B30038FCBA /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A72A1EC265D21B30038FCBA /* GTMSessionFetcher.xcframework */; };
+		5A72A1F4265D34A00038FCBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A72A1F3265D34A00038FCBA /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A6D29AE265CF3E40018C25C /* GoogleSignIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleSignIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A6D29BB265CF3E40018C25C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A6D29C0265CF3E50018C25C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A6D29D6265CF94F0018C25C /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = "Firebase/GoogleSignIn/GoogleSignIn.framework"; sourceTree = "<group>"; };
+		5A6D29DA265CF9810018C25C /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = "Firebase/FirebaseAnalytics/FirebaseAnalytics.framework"; sourceTree = "<group>"; };
+		5A6D29DB265CF9810018C25C /* FirebaseInstallations.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseInstallations.xcframework; path = "Firebase/FirebaseAnalytics/FirebaseInstallations.xcframework"; sourceTree = "<group>"; };
+		5A6D29DC265CF9810018C25C /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleUtilities.xcframework; path = "Firebase/FirebaseAnalytics/GoogleUtilities.xcframework"; sourceTree = "<group>"; };
+		5A6D29DD265CF9820018C25C /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = "Firebase/FirebaseAnalytics/GoogleAppMeasurement.framework"; sourceTree = "<group>"; };
+		5A6D29DE265CF9820018C25C /* FirebaseCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseCore.xcframework; path = "Firebase/FirebaseAnalytics/FirebaseCore.xcframework"; sourceTree = "<group>"; };
+		5A6D29DF265CF9820018C25C /* GoogleDataTransport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleDataTransport.xcframework; path = "Firebase/FirebaseAnalytics/GoogleDataTransport.xcframework"; sourceTree = "<group>"; };
+		5A6D29E1265CF9820018C25C /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromisesObjC.xcframework; path = "Firebase/FirebaseAnalytics/PromisesObjC.xcframework"; sourceTree = "<group>"; };
+		5A6D29E2265CF9820018C25C /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FIRAnalyticsConnector.framework; path = "Firebase/FirebaseAnalytics/FIRAnalyticsConnector.framework"; sourceTree = "<group>"; };
+		5A6D29F1265CF9ED0018C25C /* GTMAppAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GTMAppAuth.xcframework; path = "Firebase/GoogleSignIn/GTMAppAuth.xcframework"; sourceTree = "<group>"; };
+		5A6D29F2265CF9ED0018C25C /* AppAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AppAuth.xcframework; path = "Firebase/GoogleSignIn/AppAuth.xcframework"; sourceTree = "<group>"; };
+		5A72A1B4265D15CD0038FCBA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = src/AppDelegate.h; sourceTree = "<group>"; };
+		5A72A1B6265D15CD0038FCBA /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SceneDelegate.m; path = src/SceneDelegate.m; sourceTree = "<group>"; };
+		5A72A1B7265D15CD0038FCBA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = src/Info.plist; sourceTree = "<group>"; };
+		5A72A1B8265D15CD0038FCBA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = src/AppDelegate.m; sourceTree = "<group>"; };
+		5A72A1B9265D15CD0038FCBA /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = src/ViewController.m; sourceTree = "<group>"; };
+		5A72A1BA265D15CE0038FCBA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = src/main.m; sourceTree = "<group>"; };
+		5A72A1E8265D21960038FCBA /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = nanopb.xcframework; path = "Firebase/FirebaseAnalytics/nanopb.xcframework"; sourceTree = "<group>"; };
+		5A72A1EC265D21B30038FCBA /* GTMSessionFetcher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GTMSessionFetcher.xcframework; path = "Firebase/GoogleSignIn/GTMSessionFetcher.xcframework"; sourceTree = "<group>"; };
+		5A72A1F3265D34A00038FCBA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "src/GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A6D29AB265CF3E40018C25C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A6D2A0C265CFFA90018C25C /* GoogleDataTransport.xcframework in Frameworks */,
+				5A6D2A0A265CFFA80018C25C /* GoogleAppMeasurement.framework in Frameworks */,
+				5A6D2A0E265CFFAB0018C25C /* GoogleSignIn.framework in Frameworks */,
+				5A72A1E9265D21960038FCBA /* nanopb.xcframework in Frameworks */,
+				5A72A1ED265D21B30038FCBA /* GTMSessionFetcher.xcframework in Frameworks */,
+				5A6D2A10265CFFAC0018C25C /* GoogleUtilities.xcframework in Frameworks */,
+				5A6D2A12265CFFAD0018C25C /* GTMAppAuth.xcframework in Frameworks */,
+				5A6D29FB265CFF9E0018C25C /* AppAuth.xcframework in Frameworks */,
+				5A6D2A18265CFFB30018C25C /* PromisesObjC.xcframework in Frameworks */,
+				5A6D2A00265CFFA10018C25C /* FirebaseCore.xcframework in Frameworks */,
+				5A6D2A08265CFFA60018C25C /* FirebaseInstallations.xcframework in Frameworks */,
+				5A6D29FE265CFF9F0018C25C /* FIRAnalyticsConnector.framework in Frameworks */,
+				5A6D2A02265CFFA20018C25C /* FirebaseAnalytics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A6D29A5265CF3E40018C25C = {
+			isa = PBXGroup;
+			children = (
+				5A72A1F1265D33280038FCBA /* Frameworks */,
+				5A6D29B0265CF3E40018C25C /* src */,
+				5A6D29AF265CF3E40018C25C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A6D29AF265CF3E40018C25C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A6D29AE265CF3E40018C25C /* GoogleSignIn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A6D29B0265CF3E40018C25C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5A72A1F3265D34A00038FCBA /* GoogleService-Info.plist */,
+				5A72A1B4265D15CD0038FCBA /* AppDelegate.h */,
+				5A72A1B8265D15CD0038FCBA /* AppDelegate.m */,
+				5A72A1B7265D15CD0038FCBA /* Info.plist */,
+				5A72A1BA265D15CE0038FCBA /* main.m */,
+				5A72A1B6265D15CD0038FCBA /* SceneDelegate.m */,
+				5A72A1B9265D15CD0038FCBA /* ViewController.m */,
+				5A6D29BA265CF3E40018C25C /* Main.storyboard */,
+				5A6D29BF265CF3E50018C25C /* LaunchScreen.storyboard */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		5A72A1F1265D33280038FCBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A72A1EC265D21B30038FCBA /* GTMSessionFetcher.xcframework */,
+				5A72A1E8265D21960038FCBA /* nanopb.xcframework */,
+				5A6D29F2265CF9ED0018C25C /* AppAuth.xcframework */,
+				5A6D29F1265CF9ED0018C25C /* GTMAppAuth.xcframework */,
+				5A6D29E2265CF9820018C25C /* FIRAnalyticsConnector.framework */,
+				5A6D29DA265CF9810018C25C /* FirebaseAnalytics.framework */,
+				5A6D29DE265CF9820018C25C /* FirebaseCore.xcframework */,
+				5A6D29DB265CF9810018C25C /* FirebaseInstallations.xcframework */,
+				5A6D29DD265CF9820018C25C /* GoogleAppMeasurement.framework */,
+				5A6D29DF265CF9820018C25C /* GoogleDataTransport.xcframework */,
+				5A6D29DC265CF9810018C25C /* GoogleUtilities.xcframework */,
+				5A6D29E1265CF9820018C25C /* PromisesObjC.xcframework */,
+				5A6D29D6265CF94F0018C25C /* GoogleSignIn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A6D29AD265CF3E40018C25C /* GoogleSignIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A6D29C7265CF3E50018C25C /* Build configuration list for PBXNativeTarget "GoogleSignIn" */;
+			buildPhases = (
+				5A6D29AA265CF3E40018C25C /* Sources */,
+				5A6D29AB265CF3E40018C25C /* Frameworks */,
+				5A6D29AC265CF3E40018C25C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleSignIn;
+			productName = GoogleSignIn;
+			productReference = 5A6D29AE265CF3E40018C25C /* GoogleSignIn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A6D29A6265CF3E40018C25C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5A6D29AD265CF3E40018C25C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 5A6D29A9265CF3E40018C25C /* Build configuration list for PBXProject "GoogleSignIn" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A6D29A5265CF3E40018C25C;
+			productRefGroup = 5A6D29AF265CF3E40018C25C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A6D29AD265CF3E40018C25C /* GoogleSignIn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A6D29AC265CF3E40018C25C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A6D29C1265CF3E50018C25C /* LaunchScreen.storyboard in Resources */,
+				5A6D29BC265CF3E40018C25C /* Main.storyboard in Resources */,
+				5A72A1F4265D34A00038FCBA /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A6D29AA265CF3E40018C25C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A72A1BF265D15CE0038FCBA /* ViewController.m in Sources */,
+				5A72A1BE265D15CE0038FCBA /* AppDelegate.m in Sources */,
+				5A72A1C0265D15CE0038FCBA /* main.m in Sources */,
+				5A72A1BC265D15CE0038FCBA /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5A6D29BA265CF3E40018C25C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A6D29BB265CF3E40018C25C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A6D29BF265CF3E50018C25C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A6D29C0265CF3E50018C25C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A6D29C5265CF3E50018C25C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5A6D29C6265CF3E50018C25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A6D29C8265CF3E50018C25C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6H79QDPRAV;
+				FIREBASE_SDK_FRAMEWORK_PATH = "$(PROJECT_DIR)/Firebase/**";
+				FIREBASE_SDK_HEADER_PATH = "$(PROJECT_DIR)/Firebase";
+				FRAMEWORK_SEARCH_PATHS = "${FIREBASE_SDK_FRAMEWORK_PATH}";
+				HEADER_SEARCH_PATHS = "${FIREBASE_SDK_HEADER_PATH}";
+				INFOPLIST_FILE = src/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = google.sign.in.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A6D29C9265CF3E50018C25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FIREBASE_SDK_FRAMEWORK_PATH = "$(PROJECT_DIR)/Firebase/**";
+				FIREBASE_SDK_HEADER_PATH = "$(PROJECT_DIR)/Firebase";
+				FRAMEWORK_SEARCH_PATHS = "${FIREBASE_SDK_FRAMEWORK_PATH}";
+				HEADER_SEARCH_PATHS = "${FIREBASE_SDK_HEADER_PATH}";
+				INFOPLIST_FILE = src/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = google.sign.in.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A6D29A9265CF3E40018C25C /* Build configuration list for PBXProject "GoogleSignIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A6D29C5265CF3E50018C25C /* Debug */,
+				5A6D29C6265CF3E50018C25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A6D29C7265CF3E50018C25C /* Build configuration list for PBXNativeTarget "GoogleSignIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A6D29C8265CF3E50018C25C /* Debug */,
+				5A6D29C9265CF3E50018C25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A6D29A6265CF3E40018C25C /* Project object */;
+}
