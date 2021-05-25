@@ -1,0 +1,74 @@
+2021-05-25 17:23:54.815992+0300 GoogleSignIn[16254:9127755] 6.34.0 - [Firebase/Analytics][I-ACS800023] No pending snapshot to activate. SDK name: app_measurement
+2021-05-25 17:23:54.832541+0300 GoogleSignIn[16254:9127758] Metal API Validation Enabled
+2021-05-25 17:25:56.993947+0300 GoogleSignIn[16254:9127541] *** Assertion failure in +[UIAlertAction _actionWithTitle:descriptiveText:image:style:handler:shouldDismissHandler:], UIAlertAction.m:42
+2021-05-25 17:25:56.994529+0300 GoogleSignIn[16254:9127541] *** Terminating app due to uncaught exception 'NSInternalInconsistencyException', reason: 'Actions added to UIAlertController of style UIAlertActionStyleCancel must have a title when running in UIUserInterfaceIdiomPad'
+*** First throw call stack:
+(0x1a399b5ac 0x1b7a1542c 0x1a38a41b4 0x1a4c027bc 0x1a5796574 0x1a5796608 0x1a57967a4 0x1023f516c 0x1023f4c64 0x1028dfb68 0x1028e15f0 0x1028f0890 0x1a39181e4 0x1a39123b4 0x1a39114bc 0x1ba396820 0x1a62b5734 0x1a62bae10 0x102352c38 0x1a35d8e60)
+libc++abi.dylib: terminating with uncaught exception of type NSException
+*** Terminating app due to uncaught exception 'NSInternalInconsistencyException', reason: 'Actions added to UIAlertController of style UIAlertActionStyleCancel must have a title when running in UIUserInterfaceIdiomPad'
+terminating with uncaught exception of type NSException
+(lldb) bt all
+* thread #1, queue = 'com.apple.main-thread', stop reason = signal SIGABRT
+    frame #0: 0x00000001cf25998c libsystem_kernel.dylib`__pthread_kill + 8
+    frame #1: 0x00000001ea273c74 libsystem_pthread.dylib`pthread_kill + 272
+    frame #2: 0x00000001aca9dbb4 libsystem_c.dylib`abort + 104
+    frame #3: 0x00000001b7b14e24 libc++abi.dylib`abort_message + 132
+    frame #4: 0x00000001b7b06434 libc++abi.dylib`demangling_terminate_handler() + 308
+    frame #5: 0x00000001b7a15710 libobjc.A.dylib`_objc_terminate() + 132
+    frame #6: 0x00000001b7b142a8 libc++abi.dylib`std::__terminate(void (*)()) + 20
+    frame #7: 0x00000001b7b14234 libc++abi.dylib`std::terminate() + 44
+    frame #8: 0x00000001b7a1568c libobjc.A.dylib`objc_terminate + 16
+    frame #9: 0x00000001028e1604 libdispatch.dylib`_dispatch_client_callout + 40
+    frame #10: 0x00000001028f0890 libdispatch.dylib`_dispatch_main_queue_callback_4CF + 1000
+    frame #11: 0x00000001a39181e4 CoreFoundation`__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__ + 16
+    frame #12: 0x00000001a39123b4 CoreFoundation`__CFRunLoopRun + 2508
+    frame #13: 0x00000001a39114bc CoreFoundation`CFRunLoopRunSpecific + 600
+    frame #14: 0x00000001ba396820 GraphicsServices`GSEventRunModal + 164
+    frame #15: 0x00000001a62b5734 UIKitCore`-[UIApplication _run] + 1072
+    frame #16: 0x00000001a62bae10 UIKitCore`UIApplicationMain + 168
+  * frame #17: 0x0000000102352c38 GoogleSignIn`main(argc=1, argv=0x000000016dab3898) at main.m:11:12
+    frame #18: 0x00000001a35d8e60 libdyld.dylib`start + 4
+  thread #5, name = 'com.apple.uikit.eventfetch-thread'
+    frame #0: 0x00000001cf235dd0 libsystem_kernel.dylib`mach_msg_trap + 8
+    frame #1: 0x00000001cf235184 libsystem_kernel.dylib`mach_msg + 76
+    frame #2: 0x00000001a3917cf8 CoreFoundation`__CFRunLoopServiceMachPort + 380
+    frame #3: 0x00000001a3911ea8 CoreFoundation`__CFRunLoopRun + 1216
+    frame #4: 0x00000001a39114bc CoreFoundation`CFRunLoopRunSpecific + 600
+    frame #5: 0x00000001a4b8ee30 Foundation`-[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 232
+    frame #6: 0x00000001a4b8ed08 Foundation`-[NSRunLoop(NSRunLoop) runUntilDate:] + 92
+    frame #7: 0x00000001a6365e94 UIKitCore`-[UIEventFetcher threadMain] + 516
+    frame #8: 0x00000001a4cf90f0 Foundation`__NSThread__start__ + 864
+    frame #9: 0x00000001ea272ca8 libsystem_pthread.dylib`_pthread_start + 320
+  thread #7
+    frame #0: 0x00000001cf25a5bc libsystem_kernel.dylib`__workq_kernreturn + 8
+  thread #11
+    frame #0: 0x00000001cf25a5bc libsystem_kernel.dylib`__workq_kernreturn + 8
+  thread #12, name = 'JavaScriptCore bmalloc scavenger'
+    frame #0: 0x00000001cf25975c libsystem_kernel.dylib`__psynch_cvwait + 8
+    frame #1: 0x00000001ea276550 libsystem_pthread.dylib`_pthread_cond_wait + 1192
+    frame #2: 0x00000001b7ab3c8c libc++.1.dylib`std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 28
+    frame #3: 0x00000001ad9bb188 JavaScriptCore`void std::__1::condition_variable_any::wait<std::__1::unique_lock<bmalloc::Mutex> >(std::__1::unique_lock<bmalloc::Mutex>&) + 108
+    frame #4: 0x00000001ad9bf728 JavaScriptCore`bmalloc::Scavenger::threadRunLoop() + 196
+    frame #5: 0x00000001ad9bf364 JavaScriptCore`bmalloc::Scavenger::threadEntryPoint(bmalloc::Scavenger*) + 16
+    frame #6: 0x00000001ad9c0828 JavaScriptCore`void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, void (*)(bmalloc::Scavenger*), bmalloc::Scavenger*> >(void*) + 48
+    frame #7: 0x00000001ea272ca8 libsystem_pthread.dylib`_pthread_start + 320
+  thread #13
+    frame #0: 0x00000001ea27b774 libsystem_pthread.dylib`start_wqthread
+  thread #14
+    frame #0: 0x00000001ea27b774 libsystem_pthread.dylib`start_wqthread
+  thread #15
+    frame #0: 0x00000001cf25a5bc libsystem_kernel.dylib`__workq_kernreturn + 8
+  thread #16
+    frame #0: 0x00000001cf25a5bc libsystem_kernel.dylib`__workq_kernreturn + 8
+  thread #17
+    frame #0: 0x00000001cf25a5bc libsystem_kernel.dylib`__workq_kernreturn + 8
+  thread #18, name = 'com.apple.NSURLConnectionLoader'
+    frame #0: 0x00000001cf235dd0 libsystem_kernel.dylib`mach_msg_trap + 8
+    frame #1: 0x00000001cf235184 libsystem_kernel.dylib`mach_msg + 76
+    frame #2: 0x00000001a3917cf8 CoreFoundation`__CFRunLoopServiceMachPort + 380
+    frame #3: 0x00000001a3911ea8 CoreFoundation`__CFRunLoopRun + 1216
+    frame #4: 0x00000001a39114bc CoreFoundation`CFRunLoopRunSpecific + 600
+    frame #5: 0x00000001a41ca050 CFNetwork`___lldb_unnamed_symbol11376$$CFNetwork + 572
+    frame #6: 0x00000001a4cf90f0 Foundation`__NSThread__start__ + 864
+    frame #7: 0x00000001ea272ca8 libsystem_pthread.dylib`_pthread_start + 320
+(lldb) 
