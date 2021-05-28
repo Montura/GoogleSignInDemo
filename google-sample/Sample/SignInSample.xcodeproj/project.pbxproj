@@ -12,9 +12,6 @@
 		D92607B91DAF022300CD67C9 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92607B81DAF022300CD67C9 /* GoogleSignInDependencies.framework */; };
 		D936C1C921225D1000E8DAC9 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D936C1C821225D1000E8DAC9 /* LocalAuthentication.framework */; };
 		D99924FB1A92B478008CC226 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D99924F41A92B478008CC226 /* AppDelegate.m */; };
-		D99924FC1A92B478008CC226 /* AuthInspectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D99924F61A92B478008CC226 /* AuthInspectorViewController.m */; };
-		D99924FD1A92B478008CC226 /* DataPickerState.m in Sources */ = {isa = PBXBuildFile; fileRef = D99924F81A92B478008CC226 /* DataPickerState.m */; };
-		D99924FE1A92B478008CC226 /* DataPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D99924FA1A92B478008CC226 /* DataPickerViewController.m */; };
 		D99925021A92B4BC008CC226 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D99925001A92B4BC008CC226 /* SignInViewController.m */; };
 		D99925031A92B4BC008CC226 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99925011A92B4BC008CC226 /* SignInViewController.xib */; };
 		D99925051A92B4D3008CC226 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D99925041A92B4D3008CC226 /* main.m */; };
@@ -35,12 +32,6 @@
 		D99924CA1A92B3C7008CC226 /* SignInSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99924F31A92B478008CC226 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		D99924F41A92B478008CC226 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = SOURCE_ROOT; };
-		D99924F51A92B478008CC226 /* AuthInspectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthInspectorViewController.h; sourceTree = SOURCE_ROOT; };
-		D99924F61A92B478008CC226 /* AuthInspectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthInspectorViewController.m; sourceTree = SOURCE_ROOT; };
-		D99924F71A92B478008CC226 /* DataPickerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataPickerState.h; sourceTree = SOURCE_ROOT; };
-		D99924F81A92B478008CC226 /* DataPickerState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataPickerState.m; sourceTree = SOURCE_ROOT; };
-		D99924F91A92B478008CC226 /* DataPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataPickerViewController.h; sourceTree = SOURCE_ROOT; };
-		D99924FA1A92B478008CC226 /* DataPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataPickerViewController.m; sourceTree = SOURCE_ROOT; };
 		D99924FF1A92B4BC008CC226 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = SOURCE_ROOT; };
 		D99925001A92B4BC008CC226 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = SOURCE_ROOT; };
 		D99925011A92B4BC008CC226 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -96,12 +87,6 @@
 			children = (
 				D99924F31A92B478008CC226 /* AppDelegate.h */,
 				D99924F41A92B478008CC226 /* AppDelegate.m */,
-				D99924F51A92B478008CC226 /* AuthInspectorViewController.h */,
-				D99924F61A92B478008CC226 /* AuthInspectorViewController.m */,
-				D99924F71A92B478008CC226 /* DataPickerState.h */,
-				D99924F81A92B478008CC226 /* DataPickerState.m */,
-				D99924F91A92B478008CC226 /* DataPickerViewController.h */,
-				D99924FA1A92B478008CC226 /* DataPickerViewController.m */,
 				D99924FF1A92B4BC008CC226 /* SignInViewController.h */,
 				D99925001A92B4BC008CC226 /* SignInViewController.m */,
 				D99925011A92B4BC008CC226 /* SignInViewController.xib */,
@@ -224,9 +209,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D99925021A92B4BC008CC226 /* SignInViewController.m in Sources */,
-				D99924FE1A92B478008CC226 /* DataPickerViewController.m in Sources */,
-				D99924FD1A92B478008CC226 /* DataPickerState.m in Sources */,
-				D99924FC1A92B478008CC226 /* AuthInspectorViewController.m in Sources */,
 				D99925051A92B4D3008CC226 /* main.m in Sources */,
 				D99924FB1A92B478008CC226 /* AppDelegate.m in Sources */,
 			);
