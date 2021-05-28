@@ -83,6 +83,18 @@ static NSString *const kCredentialsButtonAccessibilityIdentifier = @"Credentials
 - (void)signIn:(GIDSignIn *)signIn
     didSignInForUser:(GIDGoogleUser *)user
            withError:(NSError *)error {
+    
+  const char* userId = [[user userID] UTF8String];
+  const char* errDescription = 0;
+  if (error) {
+      errDescription = [[error description] UTF8String];
+  }
+  printf("Inside singIn:didSignInForUser:WithError: \
+         \n\t GIDSignIn=%p; \
+         \n\t GIDGoogleUser=%p; userId = %s; \
+         \n\t NSError = %p; description = %s; \n",
+         signIn, user, userId, error, errDescription);
+    
   if (error) {
     _signInAuthStatus.text = [NSString stringWithFormat:@"Status: Authentication error: %@", error];
     return;
@@ -93,6 +105,20 @@ static NSString *const kCredentialsButtonAccessibilityIdentifier = @"Credentials
 - (void)signIn:(GIDSignIn *)signIn
     didDisconnectWithUser:(GIDGoogleUser *)user
                 withError:(NSError *)error {
+    
+  const char* userId = [[user userID] UTF8String];
+  const char* errDescription = 0;
+  if (error) {
+      errDescription = [[error description] UTF8String];
+  }
+
+  printf("Inside singIn:didDisconnectWithUser:WithError: \
+         \n\t GIDSignIn=%p; \
+         \n\t GIDGoogleUser=%p; userId = %s; \
+         \n\t NSError = %p; description = %s; \n",
+         signIn, user, userId, error, errDescription);
+
+
   if (error) {
     _signInAuthStatus.text = [NSString stringWithFormat:@"Status: Failed to disconnect: %@", error];
   } else {
