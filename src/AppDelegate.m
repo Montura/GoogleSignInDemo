@@ -1,26 +1,26 @@
-#import "AppDelegate.h"
+#include <GoogleSignIn/GIDGoogleUser.h>
 
-#include <Firebase.h>
-#include <FirebaseAnalytics/FIRAnalytics.h>
-#include <GoogleSignIn/GoogleSignIn.framework/Headers/GIDGoogleUser.h>
+#import "AppDelegate.h"
+#include "ViewController.h"
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [FIRConfiguration.sharedInstance setLoggerLevel:FIRLoggerLevelWarning];
-    [FIRApp configure];
-    
-    [FIRAnalytics setAnalyticsCollectionEnabled:true];
-
     GIDSignIn * gidSignIn = [GIDSignIn sharedInstance];
-    gidSignIn.clientID = [FIRApp defaultApp].options.clientID;
+    gidSignIn.clientID = @"791069964913-o211kjabvndbidol9fhcnh9k79hn3lf3.apps.googleusercontent.com";
     gidSignIn.delegate = self;
+
+
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    ViewController *masterViewController = [[ViewController alloc] init];
+    
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+    [self.window makeKeyAndVisible];
     
     // Override point for customization after application launch.
     return YES;
 }
-
 
 - (BOOL)application:(nonnull UIApplication *)application
             openURL:(nonnull NSURL *)url
